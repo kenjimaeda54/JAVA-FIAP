@@ -3,6 +3,16 @@ class Banco{
   String dono;
   double saldo;
   double limite;
+  
+  
+                 //preciso inferir a classe no caso Banco
+  void transferir(Banco destino,double valor){
+       this.saldo = this.saldo -valor;
+       destino.saldo = destino.saldo + valor;
+    
+  
+  }
+  
  
    boolean Sacar( double quantidade ){
          if( this.saldo < quantidade){
